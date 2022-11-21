@@ -1,0 +1,126 @@
+<!DOCTYPE htmml>
+<html>
+    <!---------------------------------------- HEAD ---------------------------------------------------------->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Leonardo S Salazar</title>
+        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    </head>
+
+    <!---------------------------------------- BODY --------------------------------------------------------->
+    <body class="Background">
+
+        <!----------------------------------- NAVBAR -------------------------------------->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!-- Breaks inserted to add space ebtween navbar and the first heading. -->
+        <br>
+        <br>
+
+        <!-------------------------------- BACKGROUND VIDEO --------------------------------->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/video/Typing.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML 5 video.
+            </video>
+        </div>
+
+        <!---------------------------------- VIDEO TEXT -------------------------------------->
+        <div class="Video_Text">
+            <h1 class="white-text">Leonardo's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    In some ways, programming is like painting.<br> 
+                    <q>You start with a blank canvas and certain basic raw materials.<br> 
+                        You use a combination of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br>-Andrew Hunt
+                    <br>
+                    <br>Outsiders question wether programming is art. Programmers dont.
+                    <br>Welcome to my portfolio website. On it, I
+                        will tell you about my background and experince.
+                    <br>Thank you for stopping by!
+                </p>
+            </strong>
+        </div>
+
+        <!--------------------------------- ABOUT SECTION -------------------------------------->
+        <div class="Row" id="About">
+            <!---------- Left Column ------------>
+            <div class="Column_2">
+                <img src="./images/Work_Space.jpg" alt="My Work Space">
+            </div>
+            <!---------- Right Column ----------->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    " My name is Leonardo S. Salazar and I am a young adult interested in learning sofware development. I lived, in Costa Rica for 12 years so I am also fluent in Spanish. I am currently enrolled 
+                    in the <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank">sofware development boot camp</a> provided by <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy.</a>
+                    <br>
+                    <br>I am currently enrolled 
+                    in the <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank">sofware development boot camp</a> provided by <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy.</a> 
+                    Some of the languages I will be learning include: HTML, CSS, JavaScript, Sql, C#, Python, and more.</a>
+                    <br>
+                    <br>If you have any other questions, feel free to <a href="#Contact">contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!---------------------------------- GITHUB SECTION ------------------------------------>
+        <div class="Row" id="GitHub">
+            <!---------- Left Column ---------->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects, done 
+                    during my course with The Tech Academy,
+                    on my GitHub account here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Stevo1998" target="_blank">Leonardo S Salazar GitHub</a></p>
+                </p>
+            </div>
+            <!--------- Right Column --------->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" taget="_blank"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-------------------------------- CONTACT SECTION -------------------------------------->
+        <div class="Row" id="Contact">
+            <!---- Contact image, Left Column ----->
+            <div class="Column_2 Column_tall">
+                <img src="./images/Contact.png" alt="Contact Image">
+            </div>
+            <!---- Contact Form, Right Column ---->
+            <div class="Column_1 Colum_tall">
+                <h1>Contact</h1>
+                <!-- This specifies where and how to send the form data; we are leaving it blank -->
+                <form action="https://formspree.io/f/mlevvdka" method="POST" style="font-weight: bold;">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--------------------------------- FOOTER SECTION -------------------------------------->
+        <footer>
+            <p>
+                <p class="center">Copyright&copy; Leonardo Steven Salazar Sánchez, 
+                  Contact me on <a href="https://www.linkedin.com/in/leonardo-salazar-304761160/" target="_blank">LinkedIn</a>
+                </p>
+            </p>
+        </footer>
+    </body>
+</html>
