@@ -1,0 +1,183 @@
+<!DOCTYPE htmml>
+<html>
+    <!---------------------------------------- HEAD ---------------------------------------------------------->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Leonardo S Salazar</title>
+        <link rel="shortcut icon" type="img/jpg" href="images_icon.png">
+        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    </head>
+
+    <!---------------------------------------- BODY --------------------------------------------------------->
+    <body class="Background">
+
+        <!----------------------------------- NAVBAR -------------------------------------->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!-- Breaks inserted to add space ebtween navbar and the first heading. -->
+        <br> <!-- Maybe delete this secttion -->
+        <br>
+
+        <!-------------------------------- BACKGROUND VIDEO --------------------------------->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/Video/Typing.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML 5 video.
+            </video>
+        </div>
+
+        <!---------------------------------- VIDEO TEXT -------------------------------------->
+        <div class="Video_Text">
+            <h1 class="white-text">Leonardo's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    In some ways, programming is like painting.<br> 
+                    <q>You start with a blank canvas and certain basic raw materials.<br> 
+                        You use a combination of science, art, and craft to determine what to do with them.
+                    </q>
+                    <br>-Andrew Hunt
+                    <br>
+                    <br>Outsiders question wether programming is art. Programmers don't.
+                    <br>Welcome to my portfolio website. On it, I
+                        will tell you about my background and experince.
+                    <br>Thank you for stopping by!
+                </p>
+            </strong>
+        </div>
+
+        <!--------------------------------- SLIDE SECTION -------------------------------------->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Self-Portrait.png" alt="Self-Portrait">
+                        <div class="text">I'm a software developement student.<br>
+                        Currently taking classes on:</div>
+                    </div>
+
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.png" alt="HTML, CSS, and JS logos">
+                        <div class="text">HTML, CSS and JavaScript,</div>
+                    </div>
+
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
+                        <div class="text">The popular language Python,</div>
+                    </div>
+
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C# and .NET Framework,</div>
+                    </div>
+
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL_and_Database.png" alt="SQL logo">
+                        <div class="text">back end developent, databases and SQL.</div>
+                    </div>
+
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Contact.png" alt="Contact Picture">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me!</a></div>
+                    </div>
+                    <!-- Previous and Next Buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between images and dots -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------- ABOUT SECTION -------------------------------------->
+        <div class="Row" id="About">
+            <!---------- Left Column ------------>
+            <div class="Column_2">
+                <img src="./images/Work_Space.png" alt="My Work Space">
+            </div>
+            <!---------- Right Column ----------->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    " My name is Leonardo S. Salazar and I am a young adult interested in learning sofware development. I lived in Costa Rica for 12 years, so I am also fluent in Spanish.
+                    <br>
+                    <br>I am currently enrolled 
+                    in the <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank">sofware development boot camp</a> provided by <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy.</a> 
+                    Some of the languages I will be learning include: HTML, CSS, JavaScript, SQL, C# and Python.</a>
+                </p>
+            </div>
+        </div>
+
+        <!---------------------------------- GITHUB SECTION ------------------------------------>
+        <div class="Row" id="GitHub">
+            <!---------- Left Column ---------->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects, done 
+                    during my course with The Tech Academy,
+                    on my GitHub account here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Stevo1998" target="_blank">Leonardo S Salazar GitHub</a></p>
+                </p>
+            </div>
+            <!--------- Right Column --------->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" taget="_blank"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-------------------------------- CONTACT SECTION -------------------------------------->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_up_Button">CONTACT FORM</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/mlevvdka" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Please enter your email here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Please write your message here" name="message">
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--------------------------------- FOOTER SECTION -------------------------------------->
+        <footer>
+            <p>
+                <p class="center">Copyright&copy; Leonardo Steven Salazar Sánchez, 
+                  Contact me on <a href="https://www.linkedin.com/in/leonardo-salazar-304761160/" target="_blank">LinkedIn</a>
+                </p>
+            </p>
+        </footer>
+
+        <!------------------------------ JAVASCRIPT REFERENCE ------------------------------------>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
