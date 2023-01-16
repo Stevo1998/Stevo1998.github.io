@@ -319,20 +319,22 @@ footer {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
-    padding-top: 1.6%; /* This ensures there is space between the top of the column and our headings */
-    height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    padding-top: 1%; /* This ensures there is space between the top of the column and our headings */
+    height: 525px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #a0a0a0; /* Sets the background color of the columns with class Column_1 */
+    text-align: center;
 }
 
 .Column_2 {
     float: left;
     width: 50%;
-    padding: 5px;
-    padding-top: 3.75%;
-    padding-bottom: 3.75%;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+    height: 525px;
     margin-right: auto;
     margin-left: auto;
-    height: 450px;
     background-color: rgb(56, 56, 56);
 }
 
@@ -359,7 +361,7 @@ footer {
     background-color: white; /* Sets the background color of the button to white */
     color: black; /* Sets the color of the button to black */
     border: solid black; /* This makes a solid black border around the buttton */
-    cursor: pointter; /* This changes the cursor when hovered over button */
+    cursor: pointer; /* This changes the cursor when hovered over button */
     -webkit-animation: movePopup 5s; /* Animation for 5 seconds for safari 4.8-8.0 */
     animation: movePopup 5s; /* Animation set for 5 seconds */ 
 }
@@ -475,13 +477,13 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 925px) and (max-width: 1050px) {
     p {
-        font-size: 2.25vw;
+        font-size: 2vw;
     }
 }
 
 @media screen and (min-width: 1051px) and (max-width: 1310px) {
     p {
-        font-size: .5vw;
+        font-size: 1.25vw;
     } 
 }
 
@@ -493,7 +495,7 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (min-width: 1536px) and (max-width: 2269px) {
     p {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
 }
 
@@ -505,7 +507,7 @@ button:hover, .form-container .btn:hover {
 
 /****** Media rule for navbar links for different screen sizes******/
 /****** Screens 1080px and smaller will display navbar links equally distributed ******/
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .Navbar a{
         width: 20%; /* This sets each navbar link to 1/5 of the navbar */
         font-size: 2.5vw;
@@ -513,7 +515,7 @@ button:hover, .form-container .btn:hover {
 }
 
 /****** Media rules to enlarge the font of the white text for smaller screens ******/
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
     .quote{
         font-size: 3.5vw;
     }
