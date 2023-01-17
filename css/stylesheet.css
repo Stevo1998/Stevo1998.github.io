@@ -310,7 +310,7 @@ footer {
 }
 /*===== END SLIDESHOW STYLING =====*/
 
-/*==== TABLE STYLING -  this section covers the styling of the columns and rows within the table ====*/
+/*===== TABLE STYLING -  this section covers the styling of the columns and rows within the table =====*/
 * { /* The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
@@ -323,7 +323,33 @@ footer {
     height: 525px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #a0a0a0; /* Sets the background color of the columns with class Column_1 */
     text-align: center;
+    overflow: auto;
 }
+
+/*===== SCROLLBAR STYLING =====*/
+
+/* Width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(31, 31, 31); 
+    border-radius: 6px;
+}
+  
+/* Handle when hovered over */
+::-webkit-scrollbar-thumb:hover {
+    background: purple; 
+}
+/*===== End of scroll bar settings =====*/
 
 .Column_2 {
     float: left;
