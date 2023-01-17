@@ -46,7 +46,7 @@ h1:hover {
 
 /***** Paragraph elements *****/
 p {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw;
@@ -559,6 +559,15 @@ button:hover, .form-container .btn:hover {
     }
     .Column_2 {
         height: 550px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 844) {
+    .Column_1 {
+        height: 350px;
+    }
+    .Column_2 {
+        height: 350px;
     }
 }
 
