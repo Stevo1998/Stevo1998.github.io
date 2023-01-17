@@ -46,7 +46,7 @@ h1:hover {
 
 /***** Paragraph elements *****/
 p {
-    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw;
@@ -265,7 +265,7 @@ footer {
     bottom: 0; /* This property sets the text at the bottom of the image */
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /*The text is center aligned within the image */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Times New Roman', Times, serif;
     letter-spacing: .1vw; /* This gives  slight spacing between letters */
     font-size: 1.5vw; /* Font size is relative to the size of the viewportt width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightlty transparent black background */
