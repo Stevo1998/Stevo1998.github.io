@@ -47,7 +47,7 @@ h1:hover {
 /***** Paragraph elements *****/
 p {
     font-family: 'Times New Roman', Times, serif;
-    text-align: justify; /* Justify text within paragraph elements */
+    text-align: center; /* Justify text within paragraph elements */
     letter-spacing: .1vw; /* This expands the text slightly */
     font-size: 2.5vw;
     padding-left: 1vw; /* Adds padding to the left of the paragraph element */
@@ -172,7 +172,7 @@ footer {
     z-index: -1; /* This places the video behind the other elements on the page */
 }
 
-/***** Screens that are 576px and smaller will not display the background video *****/
+/***** Screens that are 390px and smaller will not display the background video *****/
 @media screen and (max-width: 390px) {
     #Typing_Video {
         display: none;
@@ -357,11 +357,11 @@ footer {
 .Column_2 {
     float: left;
     width: 50%;
-    padding-top: 4.5%;
-    padding-bottom: 4.5%;
+    padding-top: 3.75%;
+    padding-bottom: 3.75%;
     padding-left: 3.75%;
     padding-right: 3.75%;
-    height: 525px;
+    height: 500px;
     margin-right: auto;
     margin-left: auto;
     background-color: rgb(56, 56, 56);
@@ -564,12 +564,12 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
     .Column_1 {
-        height: 102px;
+        height: 245px;
     }
     .Column_2 {
-        height: 102px;
+        height: 245px;
     }
 }
 
