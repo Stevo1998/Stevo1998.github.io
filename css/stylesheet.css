@@ -133,7 +133,7 @@ footer {
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: 'Times New Roman', Times, serif; /* This specifies the font family for text on our navbar */
-    font-size: 1.5vw; /* This specifies the font size for text on our navbar */
+    font-size: 2.5vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 2.5s; /* Animation for Safari 4.0 - 8.0 */
@@ -321,6 +321,8 @@ footer {
     padding: 10px;
     padding-top: 1%; /* This ensures there is space between the top of the column and our headings */
     padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
     height: 525px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #a0a0a0; /* Sets the background color of the columns with class Column_1 */
     text-align: center;
