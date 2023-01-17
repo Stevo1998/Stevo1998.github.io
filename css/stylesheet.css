@@ -562,7 +562,7 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 844) {
+@media screen and (min-width: 200px) and (max-width: 844) {
     .Column_1 {
         height: 350px;
     }
