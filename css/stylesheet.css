@@ -173,7 +173,7 @@ footer {
 }
 
 /***** Screens that are 576px and smaller will not display the background video *****/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 390px) {
     #Typing_Video {
         display: none;
     }
@@ -564,7 +564,7 @@ button:hover, .form-container .btn:hover {
     }
 }
 
-@media screen and (min-width: 200px) and (max-width: 844) {
+@media screen and (max-width: 390px) {
     .Column_1 {
         height: 350px;
     }
