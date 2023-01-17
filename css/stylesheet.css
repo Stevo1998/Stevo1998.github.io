@@ -557,19 +557,19 @@ button:hover, .form-container .btn:hover {
 /****** Media rules to increase the size of the columns for larger screens ******/
 @media screen and (min-width: 1725px) {
     .Column_1 {
-        height: 550px;
+        height: 600px;
     }
     .Column_2 {
-        height: 550px;
+        height: 600px;
     }
 }
 
 @media screen and (max-width: 390px) {
     .Column_1 {
-        height: 350px;
+        height: 170px;
     }
     .Column_2 {
-        height: 350px;
+        height: 170px;
     }
 }
 
