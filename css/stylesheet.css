@@ -323,7 +323,7 @@ footer {
     padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    height: 525px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 500px; /* This sets the height of the column to 500px -  this may need to be adjusted depending on the text you enter */
     background-color: #a0a0a0; /* Sets the background color of the columns with class Column_1 */
     text-align: center;
     overflow: auto;
@@ -566,10 +566,10 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (max-width: 390px) {
     .Column_1 {
-        height: 170px;
+        height: 102px;
     }
     .Column_2 {
-        height: 170px;
+        height: 102px;
     }
 }
 
