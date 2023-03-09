@@ -107,6 +107,31 @@ footer {
 }
 /*===== END OF GENERAL STYLING =====*/
 
+/*===== SCROLLBAR STYLING =====*/
+
+/* Width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(31, 31, 31); 
+    border-radius: 6px;
+}
+  
+/* Handle when hovered over */
+::-webkit-scrollbar-thumb:hover {
+    background: purple; 
+}
+/*===== End of scroll bar settings =====*/
+
 /*===== NAVBAR STYLING =====*/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
@@ -133,7 +158,7 @@ footer {
     padding: .75vw 1vw; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: 'Times New Roman', Times, serif; /* This specifies the font family for text on our navbar */
-    font-size: 2.5vw; /* This specifies the font size for text on our navbar */
+    font-size: 1.75vw; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 2.5s; /* Animation for Safari 4.0 - 8.0 */
@@ -180,7 +205,7 @@ footer {
 }
 
 /***** Texts over the video *****/
-.Video_Text {
+.Video_Text {  /* The container */ 
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
@@ -190,6 +215,11 @@ footer {
     -webkit-animation: moveVideoText 2.5s;
     animation: moveVideoText 2.5s;
 }
+
+.Video_Text p, q { /* Text in video container */
+    font-size: 1.5vw;
+}
+
 
 /***** This animation effect causes the overlay video text to move up from the bottom of the page upon page load *****/
 @keyframes moveVideoText {
@@ -329,30 +359,9 @@ footer {
     overflow: auto;
 }
 
-/*===== SCROLLBAR STYLING =====*/
-
-/* Width */
-::-webkit-scrollbar {
-    width: 12px;
+.Column_1 p, h1{
+    padding-top: 15px;
 }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 6px;
-}
-   
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(31, 31, 31); 
-    border-radius: 6px;
-}
-  
-/* Handle when hovered over */
-::-webkit-scrollbar-thumb:hover {
-    background: purple; 
-}
-/*===== End of scroll bar settings =====*/
 
 .Column_2 {
     float: left;
@@ -450,7 +459,7 @@ button:hover, .form-container .btn:hover {
     background-color: purple; /* Tthis makes the background color of buttons purple when hovered over */
     transition-duration: 1s;
     -webkit-transition-duration: 1s; /* For safari 4.0-8.0 */
-    border-color: black; /*The border turn white when button is hovered over */
+    border-color: white; /*The border turn white when button is hovered over */
 }
 
 /***** Submit button *****/
