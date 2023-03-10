@@ -400,8 +400,8 @@ footer {
     color: black; /* Sets the color of the button to black */
     border: solid black; /* This makes a solid black border around the buttton */
     cursor: pointer; /* This changes the cursor when hovered over button */
-    -webkit-animation: movePopup 5s; /* Animation for 5 seconds for safari 4.8-8.0 */
-    animation: movePopup 5s; /* Animation set for 5 seconds */ 
+    -webkit-animation: movePopup 2.5s; /* Animation for 5 seconds for safari 4.8-8.0 */
+    animation: movePopup 2.5s; /* Animation set for 5 seconds */ 
 }
 
 /***** movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
