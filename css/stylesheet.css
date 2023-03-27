@@ -101,8 +101,9 @@ img:hover {
 
 /***** Styling for footer element *****/
 footer {
+    height: max-content;
     color: #000000; /* sets the color of the text in footer to white*/
-    padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
+    padding: .5%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
     background-color: rgb(221, 221, 221);
 }
 /*===== END OF GENERAL STYLING =====*/
@@ -198,7 +199,7 @@ footer {
 }
 
 /***** Screens that are 390px and smaller will not display the background video *****/
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
     #Typing_Video {
         display: none;
     }
@@ -209,7 +210,7 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 100vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    height: 90vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 2.5s;
@@ -217,7 +218,7 @@ footer {
 }
 
 .Video_Text p, q { /* Text in video container */
-    font-size: 1.5vw;
+    font-size: 2.5vw;
 }
 
 
@@ -348,9 +349,6 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 10px;
-    padding-top: 1%; /* This ensures there is space between the top of the column and our headings */
-    padding-bottom: 1%;
     padding-left: 1%;
     padding-right: 1%;
     height: 500px; /* This sets the height of the column to 500px -  this may need to be adjusted depending on the text you enter */
@@ -566,10 +564,19 @@ button:hover, .form-container .btn:hover {
 /****** Media rules to increase the size of the columns for larger screens ******/
 @media screen and (min-width: 1725px) {
     .Column_1 {
-        height: 600px;
+        height: 650px;
     }
     .Column_2 {
-        height: 600px;
+        height: 650px;
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    .Column_1 {
+        height: 500px;
+    }
+    .Column_2 {
+        height: 500px;
     }
 }
 
@@ -584,10 +591,9 @@ button:hover, .form-container .btn:hover {
 
 
 /****** Media rule to remove margin-top from h1 elements for extra large screens (so that the paragraph text fits in the column ******/
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2300px) {
     h1{
         margin-top: 0;
     }
 }
-
 /*===== END OF MEDIA QUERY SECTION =====*/
