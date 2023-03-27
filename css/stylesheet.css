@@ -210,7 +210,7 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
     color: white; /* Makes the font color white */
     width: 100%; /* Ensures the video-text container fills the width of the video */
-    height: 90vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    height: 105vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveVideoText 2.5s;
@@ -594,6 +594,12 @@ button:hover, .form-container .btn:hover {
 @media screen and (min-width: 2300px) {
     h1{
         margin-top: 0;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .Video_Text{
+        height: 65vh;    
     }
 }
 /*===== END OF MEDIA QUERY SECTION =====*/
