@@ -603,7 +603,32 @@ button:hover, .form-container .btn:hover {
 
 @media screen and (max-height: 600px) {
     .Video_Text{
-        height: 65vh;    
+        height: 60vh;    
     }
 }
+
+@media screen and (height: 844px) {
+    .Video_Text{
+        height: 30vh;    
+    }
+    .white-text {
+        padding-top: 3vh;
+    }
+}
+@media screen and (height: 869px) {
+    .Video_Text{
+        height: 30vh;    
+    }
+    .white-text {
+        padding-top: 3vh;
+    }
+}
+/* @media screen and (max-height: 920px) {
+    .Video_Text{
+        height: 60vh;    
+    }
+    .white-text {
+        padding-top: 3.5vh;
+    }
+} */
 /*===== END OF MEDIA QUERY SECTION =====*/
